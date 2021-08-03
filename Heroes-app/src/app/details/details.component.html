@@ -1,0 +1,12 @@
+<body *ngIf="hero">
+    <h2>My Hero from "Details" Component</h2>
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div><span>Color: </span>{{hero.Color}}</div>
+    <div>
+      <label for="hero-name">Hero name: </label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+  
+</body>
+  
