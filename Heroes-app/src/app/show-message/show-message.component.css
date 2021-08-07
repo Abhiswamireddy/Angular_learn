@@ -1,0 +1,17 @@
+
+h2 {text-align: center;}
+div {text-align: center; background-color: rgb(126, 130, 143); -webkit-text-size-adjust: 50%}
+
+.clear{
+    color: #333;
+  background-color: #eee;
+  margin-bottom: 4px;
+  padding: 1rem;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+.clear:hover {
+    color: white;
+    background-color: #42545C;
+  }
+/* body {text-align: center;background-color: teal} */
