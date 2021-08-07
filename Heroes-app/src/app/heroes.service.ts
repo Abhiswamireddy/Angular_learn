@@ -7,7 +7,6 @@ import { Hero } from './hero';
 import { HEROES } from './Datalist-heroes';
 
 
-
 @Injectable({
   providedIn: 'root'
 })
