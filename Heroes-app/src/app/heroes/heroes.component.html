@@ -8,12 +8,19 @@
 
 <div>
 <h2>My Heroes</h2>
-<ul class="heroes">
+<!-- <ul class="heroes">
   <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero"
   (click)="onSelect(hero)">
     <span class="badge">{{hero.id}} </span> {{hero.name}} {{hero.Color}}
   </li>
-</ul>
+</ul> -->
+<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}} {{hero.Color}}
+      </a>
+    </li>
+  </ul>
 </div>
 
 <body *ngIf="selectedHero">
@@ -30,4 +37,4 @@
 
 </body>
 
-<app-details [hero]="selectedHero"></app-details>
+<!-- <app-details [hero]="selectedHero"></app-details> -->

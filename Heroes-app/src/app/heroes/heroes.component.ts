@@ -19,19 +19,20 @@ export class HeroesComponent implements OnInit {
   //   name: 'Micky'
   // };
   
-  heroes = HEROES;
+  // heroes = HEROES;
   selectedHero?: Hero;
+  heroes: Hero[] = [];
   
   constructor(private heroService: HeroesService, private messageService: MessageService) { }
 
   ngOnInit() {
     this.getHeroes();
   }
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id} , hero name =${hero.name} , hero color =${hero.Color}`);
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id} , hero name =${hero.name} , hero color =${hero.Color}`);
     
-  }
+  // }
 
   getHeroes(): void {
     this.heroService.getHeroes()
